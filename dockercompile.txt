@@ -1,0 +1,23 @@
+pipeline
+{
+  agent 
+     {
+       docker
+        {
+           image 'ubuntu'
+         }
+      }
+   stages
+    {
+      stage('compile')
+       {
+         steps
+          {
+             sh 'cd /home/edureka
+
+
+          }
+       }
+    }
+}
+            
