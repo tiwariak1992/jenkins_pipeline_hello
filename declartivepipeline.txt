@@ -6,7 +6,7 @@ pipeline
        stage("cloning code")
         { 
            steps
-            {git 'https://github.com/tiwariak1992/jenkins_pipeline_hello/tree/master'
+            {git 'https://github.com/tiwariak1992/node-js-sample.git'
             }
          }
       }
