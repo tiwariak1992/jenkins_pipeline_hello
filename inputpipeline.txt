@@ -1,0 +1,41 @@
+pipeline
+{
+  agent any
+   
+     stages
+      {
+        stage('build')
+         {
+            step
+             {
+               sh 'echo building'
+             }
+
+          }
+        stage('test')
+         {
+            step
+             {
+               echo 'executing each test cases'
+             }
+          }
+         stage('get approval')
+          {
+            step
+              {
+                 input 'deploy to qa?')
+               }
+           }
+          stage('deploy to qa')
+           {
+             step
+              {
+                echo 'deploying to qa'
+              }
+           }
+       }
+}
+
+
+              
+   
