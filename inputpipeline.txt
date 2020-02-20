@@ -6,7 +6,7 @@ pipeline
       {
         stage('build')
          {
-            step
+            steps
              {
                sh 'echo building'
              }
@@ -14,21 +14,21 @@ pipeline
           }
         stage('test')
          {
-            step
+            steps
              {
                echo 'executing each test cases'
              }
           }
          stage('get approval')
           {
-            step
+            steps
               {
                  input 'deploy to qa?'
                }
            }
           stage('deploy to qa')
            {
-             step
+             steps
               {
                 echo 'deploying to qa'
               }
