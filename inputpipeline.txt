@@ -23,7 +23,7 @@ pipeline
           {
             step
               {
-                 input 'deploy to qa?')
+                 input 'deploy to qa?'
                }
            }
           stage('deploy to qa')
